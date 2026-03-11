@@ -1,0 +1,8 @@
+.heading_line_top{
+    width: 50%;
+    height: 1px;
+    background-color: #727272;
+    position: absolute;
+    left: 0;
+    top: -10px;
+}

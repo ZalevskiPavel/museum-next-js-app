@@ -1,5 +1,12 @@
+"use client"
 import { Bellefair } from "next/font/google";
 import styles from "./page.module.css";
+import BottomLine from "../../components/HeadingBottomLine/BottomLine";
+import TopLine from "../../components/HeadingTopLine/TopLine";
+import HeadingButton from "../../components/HeadingButton/HeadingButton";
+import SlideData from "../../utils/slider-data.json"
+import Slide from "../../components/MainPageSlide/Slide";
+import { useState } from "react";
 
 const bellefair = Bellefair({
   subsets: ["latin"],
@@ -67,6 +74,17 @@ const bellefair = Bellefair({
       </main>
     </div>*/
 export default function Home() {
+  const [currentSlide, setCurrentSlide] = useState(0);
+  const totalSlides = SlideData.slides.length;
+
+  const nextSlide = () => {
+    setCurrentSlide((prev) => (prev + 1) % totalSlides);
+  };
+
+  const prevSlide = () => {
+    setCurrentSlide((prev) => (prev - 1 + totalSlides) % totalSlides);
+  };
+
   return (
     <div>
       <header className={styles.header}>
@@ -100,6 +118,52 @@ export default function Home() {
                 </a>
               </div>
               <div className={styles.plast}></div>
+            </div>
+          </div>
+        </section>
+        {/*new section to redact*/}
+        <section className={styles.sectionEvents}>
+          <div className={[styles.container, styles.events].join(" ")}>
+            <div className={styles.events_heading}>
+              <div className={[styles.heading_text, bellefair.className].join(" ")}>
+                <TopLine />
+                Upcoming Events
+                <BottomLine />
+              </div>
+              <HeadingButton link={"/"} />
+            </div>
+            <div className={styles.slider_events_container}>
+              <div className={styles.events_slides}
+                style={{
+                  transform: `translateX(-${currentSlide * 100}%)`,
+                  transition: "transform 0.5s ease"
+                }}>
+                {
+                  SlideData.slides.map((slide) => {
+                    return (<Slide key={slide.id}
+                      number={slide.number}
+                      title={slide.title}
+                      date={slide.date}
+                      description={slide.description}
+                      image={slide.image}
+                      links={slide.links}
+                    />);
+                  })
+                }
+              </div>
+            </div>
+            <div className={styles.slider_manipulators_container}>
+              <div className={styles.slider_line}>
+                <div className={styles.slider_switcher}
+                  style={{
+                    width: `${100 / totalSlides}%`,
+                    transform: `translateX(${currentSlide * 100}%)`
+                  }}></div>
+              </div>
+              <div className={styles.event_buttons}>
+                <button onClick={prevSlide}>❮</button>
+                <button onClick={nextSlide}>❯</button>
+              </div>
             </div>
           </div>
         </section>

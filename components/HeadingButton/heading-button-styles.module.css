@@ -1,0 +1,10 @@
+.view{
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    border: 1px solid #FFFFFF;
+    background: none;
+    color: #FFFFFF;
+    font-family: Bellefair;
+    font-size: 22px;
+}

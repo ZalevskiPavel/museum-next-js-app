@@ -1,0 +1,9 @@
+.heading_line_bottom{
+    position: absolute;
+    width: 150%;
+    height: 1px;
+    background-color: #B9B9B9;
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+}

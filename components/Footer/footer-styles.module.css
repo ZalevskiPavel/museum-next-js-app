@@ -1,0 +1,158 @@
+/*Footer*/
+
+.footer {
+    width: 100%;
+    min-height: 300px;
+    /*background-color: black;*/
+}
+
+.footer_container {
+    width: 100%;
+    padding: 0 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.grid_footer_top_part {
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+    border-bottom: 1px solid white;
+    padding: 20px;
+}
+
+.social_media {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+
+.social_media p {
+    font-family: Bellefair;
+    font-size: 50px;
+    margin-bottom: 10px;
+}
+
+.social_media ul {
+    display: flex;
+    gap: 0.5em;
+}
+
+.social_media ul li {
+    list-style: none;
+}
+
+.icons {
+    width: 50px;
+    height: 50px;
+    padding: 10px;
+    background-color: #282828;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    transition: 0.5s;
+}
+
+.icons:hover {
+    background: #404040;
+    transition: 0.5s;
+}
+
+.newsletter {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: end;
+    gap: 10px;
+}
+
+.newsletter p {
+    font-size: 20px;
+}
+
+.email_container {
+    display: flex;
+}
+
+#email {
+    background: #0D0D0D;
+    width: 400px;
+    height: 35px;
+    border: 1px solid white;
+    border-radius: 5px 0px 0 5px;
+    padding-left: 10px;
+}
+
+#email:focus {
+    background: white;
+}
+
+#sign_up {
+    width: 100px;
+    height: 35px;
+    background-color: white;
+    font-family: Bellefair;
+    border: 1px solid white;
+    transition: 0.5s;
+    border-radius: 0px 5px 5px 0px;
+    font-size: 19px;
+}
+
+#sign_up:hover {
+    background-color: #0D0D0D;
+    color: white;
+}
+
+.footer_bottom_part {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    padding: 10px 30px;
+    border-bottom: 1px solid white;
+}
+
+.footer_bottom_part div {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer_bottom_part div h3 {
+    font-size: 20px;
+}
+
+
+.footer_bottom_part div p {
+    color: #8d8a8a;
+}
+
+.under_footer {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 10px;
+    gap: 3em;
+    font-size: 15px;
+}
+
+.links {
+    display: flex;
+    gap: 2em;
+}
+
+.under_icons {
+    position: relative;
+    top: 5px;
+    right:5px;
+}
+
+.under_footer a:hover {
+    color: #404040;
+    transition: 0.3s;
+}
+
+.container {
+    width: 1400px;
+    height: 100%;
+    margin: 0 auto;
+}

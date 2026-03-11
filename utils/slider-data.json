@@ -1,0 +1,52 @@
+{
+  "slides": [
+    {
+      "id": 1,
+      "number": "01",
+      "title": "HISTORY OF THE GREAT KING",
+      "date": "START ON : 08:00 GTS . MONDAY",
+      "description": "LOREM IPSUM DOLOR SIT AMET, CONSECTETUR ADIPISCING ELIT. IPSUM ELEMENTUM PHARETRA ELEMENTUM IACULIS CONSEQUAT. LECTUS LEO EGESTAS MAURIS AMET.",
+      "image": "/images/image_03.webp",
+      "links": {
+        "know_more": "#",
+        "book_ticket": "#"
+      }
+    },
+    {
+      "id": 2,
+      "number": "02",
+      "title": "LEGENDS OF THE ANCIENT EMPIRE",
+      "date": "START ON : 10:30 GTS . TUESDAY",
+      "description": "SUSPENDISSE POTENTI. VIVAMUS EU LECTUS NEC MASSA TINCIDUNT VULPUTATE. INTEGER CONSECTETUR, MI IN PORTA ALIQUET, METUS JUSTO VARIUS LEO.",
+      "image": "/images/image_04.webp",
+      "links": {
+        "know_more": "#",
+        "book_ticket": "#"
+      }
+    },
+    {
+      "id": 3,
+      "number": "03",
+      "title": "THE RISE OF A WARRIOR",
+      "date": "START ON : 14:00 GTS . WEDNESDAY",
+      "description": "CURABITUR NON DIAM SIT AMET NISI TEMPUS CONVALLIS. DONEC ACCUMSAN, ERAT NON CONSEQUAT ALIQUET, ERAT URNA FACILISIS ELIT.",
+      "image": "/images/image_05.webp",
+      "links": {
+        "know_more": "#",
+        "book_ticket": "#"
+      }
+    },
+    {
+      "id": 4,
+      "number": "04",
+      "title": "THE FINAL BATTLE",
+      "date": "START ON : 19:00 GTS . FRIDAY",
+      "description": "PROIN VITAE DIAM NEC ANTE ELEMENTUM TEMPOR. SED VEL JUSTO VELIT. MAURIS VEL LIGULA AT ERAT VOLUTPAT PORTA.",
+      "image": "/images/image_06.webp",
+      "links": {
+        "know_more": "#",
+        "book_ticket": "#"
+      }
+    }
+  ]
+}

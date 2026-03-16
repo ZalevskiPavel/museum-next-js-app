@@ -1,0 +1,25 @@
+{
+    "navigation": [
+        {
+            "title": "HOME",
+            "link": "/"
+        },
+        {
+            "title": "EXHIBITIONS AND EVENTS",
+            "link": "/"
+        },
+        {
+            "title": "HISTORY",
+            "link": "/"
+        },
+        {
+            "title": "CONTACT",
+            "link": "/"
+        }
+    ],
+    "logo": {
+        "image": "/Logo.png",
+        "text": "UXMCS MUSEUM",
+        "link": "/"
+    }
+}

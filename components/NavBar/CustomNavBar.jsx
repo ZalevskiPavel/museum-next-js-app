@@ -1,27 +1,28 @@
 import styles from "./nav-bar-styles.module.css"
+import NavData from "../../utils/nav-data.json"
 
 export default function CustomNavBar() {
     return (
         <nav className={styles.nav}>
             <ul>
-                <li>
-                    <a href="/">HOME</a>
-                </li>
-                <li>
-                    <a href="/">EXHIBITIONS AND EVENTS</a>
-                </li>
+                {NavData.navigation.slice(0, 2).map((item) => (
+                    <li key={item.title}>
+                        <a href={item.link}>{item.title}</a>
+                    </li>
+                ))}
+
                 <li>
                     <div className={styles.logo}>
-                        <img src="/Logo.png" alt="" />
-                        <div>UXMCS MUSEUM</div>
+                        <img src={NavData.logo.image} alt="" />
+                        <div>{NavData.logo.text}</div>
                     </div>
                 </li>
-                <li>
-                    <a href="/">HISTORY</a>
-                </li>
-                <li>
-                    <a href="/">CONTACT</a>
-                </li>
+
+                {NavData.navigation.slice(2).map((item) => (
+                    <li key={item.title}>
+                        <a href={item.link}>{item.title}</a>
+                    </li>
+                ))}
             </ul>
             {/* <!--burger-mm-yammy-->
                 <div class="burger_nav">

@@ -1,8 +1,20 @@
 import styles from "./footer-styles.module.css"
 import { Facebook, Instagram, Twitter, Youtube, Tiktok, Vk, HappyBeaming, Envelope, Clock, Copyright } from "@boxicons/react";
+import FooterData from "../../utils/footer-data.json"
 
 export default function Footer() {
-    return(
+    function getIcon(name) {
+        switch (name) {
+            case "facebook": return <Facebook className={styles.icons} />;
+            case "instagram": return <Instagram className={styles.icons} />;
+            case "twitter": return <Twitter className={styles.icons} />;
+            case "youtube": return <Youtube className={styles.icons} />;
+            case "tiktok": return <Tiktok className={styles.icons} />;
+            case "vk": return <Vk className={styles.icons} />;
+        }
+    }
+
+    return (
         <footer className={styles.footer}>
             <div className={styles.container}>
                 <div className={styles.footer_container}>
@@ -12,37 +24,15 @@ export default function Footer() {
                                 Connect with us
                             </p>
                             <ul>
-                                <li>
-                                    <a href="">
-                                        <Facebook className={styles.icons}/>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="">
-                                        <Instagram className={styles.icons}/>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="">
-                                        <Twitter className={styles.icons}/>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="">
-                                        <Youtube className={styles.icons}/>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="">
-                                        <Tiktok className={styles.icons}/>
-                                    </a>
-                                </li>
-                                
-                                <li>
-                                    <a href="">
-                                       <Vk className={styles.icons}/>
-                                    </a>
-                                </li>
+                                {FooterData.social_media.map((element) => {
+                                    return (
+                                        <li key={element.name}>
+                                            <a href={element.link}>
+                                                {getIcon(element.name)}
+                                            </a>
+                                        </li>
+                                    );
+                                })}
                             </ul>
                         </div>
                         <div className={styles.newsletter}>
@@ -50,37 +40,43 @@ export default function Footer() {
                                 Enter your email address to receive our newsletter
                             </p>
                             <div className={styles.email_container}>
-                                <input type="email" id={styles.email}/>
+                                <input type="email" id={styles.email} />
                                 <button id={styles.sign_up}>Sign Up</button>
                             </div>
                         </div>
                     </div>
                     <div className={styles.footer_bottom_part}>
                         <div>
-                            <h3><Envelope className={styles.under_icons}/>Reach us</h3>
-                            <p>museumemail@gmail.com</p>
+                            <h3><Envelope className={styles.under_icons} />Reach us</h3>
+                            <p>{FooterData.contact.email}</p>
                         </div>
                         <div>
-                            <h3><Clock className={styles.under_icons}/>Opening hours</h3>
-                            <p>Daily: 10.00–17.00 (Fridays: 20.30)</p>
-                            <p>Last entry: 16.45 (Fridays: 20.15)</p>
+                            <h3><Clock className={styles.under_icons} />Opening hours</h3>
+                            <p>{FooterData.opening_hours.opening}</p>
+                            <p>{FooterData.opening_hours.last_entry}</p>
                         </div>
                         <div>
-                            <h3><HappyBeaming className={styles.under_icons}/>Free entry</h3>
-                            <p>Great Russell Street</p>
-                            <p>London WC1B 3DG</p>
-                            <p>+44 (0)20 7323 8000</p>
+                            <h3><HappyBeaming className={styles.under_icons} />Free entry</h3>
+                            {FooterData.contact.address.map((element) => {
+                                return <p key={element}>{element}</p>
+                            })}
+                            <p>{FooterData.contact.phone}</p>
                         </div>
-                        <img src="/footer-turtle.webp" alt=""/>
+                        <img src="/footer-turtle.webp" alt="" />
                     </div>
                     <div className={styles.under_footer}>
                         <div className={styles.links}>
-                            <a href="">Privacy policy</a>
-                            <a href="">Cookies</a>
-                            <a href="">Accesibility statement</a>
-                            <a href="">Terms of use</a>
+                            {FooterData.footer_links.map((element) => {
+                                return (
+                                    <a 
+                                    key={element.title}
+                                    href={element.link}>
+                                        {element.title}
+                                    </a>
+                                );
+                            })}
                         </div>
-                        <p><Copyright className={styles.under_icons}/>2024 The Trustees of Museum</p>
+                        <p><Copyright className={styles.under_icons} />2024 The Trustees of Museum</p>
                     </div>
                 </div>
             </div>

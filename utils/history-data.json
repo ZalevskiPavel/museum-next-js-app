@@ -1,0 +1,49 @@
+{
+  "sections": [
+    {
+      "title": "When did our story begin?",
+      "text": [
+        "In 1753, an Act of Parliament created the world's first free, national, public museum that opened its doors to 'all studious and curious persons' in 1759. Initially, visitors had to apply for tickets to see the museum's collections during limited visiting hours. In effect, this meant entry was restricted to well-connected visitors who were given personal tours of the collections by the museum's Trustees and curators.",
+        "From the 1830s onwards, regulations were changed and opening hours were extended. Gradually, the museum became truly open and freely accessible to all and we now welcome more than 6 million local and international visitors to the museum every year. Our extensive touring exhibition and loans programme means that millions of people also see the museum's collections at venues across the UK and worldwide."
+      ],
+      "image": "/history/history_proect.webp",
+      "description": "Smirke's original designs for display cases, still in use in the Enlightenment Gallery today. © The Trustees of the Museum.",
+      "reverse": false
+    },
+    {
+      "title": "How did the collection grow?",
+      "text": [
+        "Sir Hans Sloane (1660–1753), physician and President of the Royal Society, amassed a huge collection of more than 80,000 'natural and artificial rarities' with a vast library of over 40,000 books and manuscripts, and 32,000 coins and medals.",
+        "The 1753 Act purchased this for the public which, along with the Cotton, Harley and Royal Libraries, became a new kind of public institution, called the British Museum. Sloane had used developing global networks created by European imperial expansion to collect these materials and financed the purchases with income partly derived from enslaved labour on Jamaican sugar plantations."
+      ],
+      "image": "/history/history_Hans-Sloane-mezzotint_1.jpg",
+      "description": "Sir Hans Sloane, print by John Faber the Younger. Mezzotint, 1728. © The Trustees of the Museum.",
+      "reverse": true
+    },
+    {
+      "title": null,
+      "text": [
+        "Over the next 260 years, the museum's wide-ranging collections have grown to about eight million objects covering two million years of human history. Some of these objects were taken or purchased in regions then under British colonial rule before they were purchased, donated or bequeathed to the museum, while others were acquired through excavations, sales and other bequests by collectors.",
+        "Curators continue to acquire objects today and are actively researching the collections, including the circumstances in which objects were originally acquired, in collaboration with the museum's scientists as well as academic and community partners in the UK and across the world. We share these stories with the public through our gallery displays and temporary exhibitions, publications, gallery talks, events, the website, especially Collection online, and through social media."
+      ],
+      "image": "/history/history_rosetta_stone_object_trail.jpg",
+      "description": "The Rosetta Stone, located in Egyptian sculpture.",
+      "reverse": false
+    },
+    {
+      "type": "spacer"
+    },
+    {
+      "title": "Where was the collection housed?",
+      "text": [
+        "The museum's collections were first housed in a 17th-century mansion, Montagu House, which was extensively refurbished before it opened to the public in 1759. As the collections grew, new galleries were added to the original building.",
+        "Soon, the need for space was so great that Montagu House began to be demolished in 1823 to make way for Sir Robert Smirke's much bigger Greek Revival style building that we know today. The Enlightenment Gallery (Room 1) was the first wing to be built, to house King George III’s library and the colonnaded portico through which visitors still enter the museum completed the building in 1852. Sir Richard Westmacott designed the sculptures in the pediment above the entrance to reflect the 'progress of civilisation' as conceived by Victorians at a time when British confidence and global power through imperial expansion was growing.",
+        "The latest technology has always been integrated into the construction of the building, including the soaring dome of the Round Reading Room (opened in 1857) and the Queen Elizabeth II Great Court which encloses it that was designed by Foster and Partners (opened in 2000). We continue to expand and develop the museum site in response to current needs and opened the World Conservation and Exhibition Centre in 2013.",
+        "The Museum has ambitious plans for the future as we look to restore the historic building and re-display the collection. These plans will take many years to complete, but the first phase will be the BM_ARC a new collection research and storage facility near Reading which will open in 2023."
+      ],
+      "image": "/history/history_Early_view_of_the_Museum.webp",
+      "description": "19th century print of the Museum Great Russell Street entrance.",
+      "reverse": true
+    }
+  ]
+}

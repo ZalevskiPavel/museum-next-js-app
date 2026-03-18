@@ -1,0 +1,78 @@
+.body{
+    background-image: url('/history-bg.jpg');
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.header_container{
+    width: 100%;
+    height: 50vw;
+    display: flex;
+    align-items: end;
+}
+
+.blackout{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left:0;
+    background-image: linear-gradient(to bottom, rgba(142, 134, 134, 0.555), black);
+    opacity: 0.5;
+}
+
+.header_container p{
+    font-family: Bellefair;
+    font-size: 90px;
+    padding: 10px 0px;
+    position: absolute;
+    margin-left: 10px;
+}
+
+#main{
+    width: 100%;
+    min-height: 800px;
+    color: #ffffff;
+}
+
+/*introduction section*/
+
+#introduction, .history_section{
+    background-color: #000000;
+    
+}
+
+.introduction_container{
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 45px 40px;
+    border-bottom: 1px solid #6d6c6c;
+}
+.information{
+    display: flex;
+    
+    flex-direction: column;
+    gap:15px;
+}
+
+.introduction_heading{
+    font-size: 40px;
+    font-family: Bellefair;
+}
+
+/*Global*/
+.container {
+    width: 1400px;
+    height: 100%;
+    margin: 0 auto;
+
+}
+
+.a{
+    text-decoration: none;
+    color:azure;
+}
+.spacer{
+    height: 20vw;
+}

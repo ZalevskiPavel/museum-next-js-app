@@ -23,6 +23,10 @@
     position: relative;
     font-size: 72px;
 }
+.heading_text p{
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
 
 /*Slider*/
 

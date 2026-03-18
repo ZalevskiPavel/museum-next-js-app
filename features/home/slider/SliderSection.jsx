@@ -4,7 +4,7 @@ import { Bellefair } from "next/font/google";
 import HeadingLine from "../../../components/HeadingLine/HeadingLine";
 import HeadingButton from "../../../components/HeadingButton/HeadingButton";
 import SlideData from "../../../utils/slider-data.json"
-import Slide from "../slider/MainPageSlide/Slide"
+import Slide from "../slider/item/Slide"
 import styles from "./slider-section.module.css"
 
 const bellefair = Bellefair({
@@ -30,7 +30,7 @@ export default function MainSlider() {
         <div className={styles.events_heading}>
           <div className={[styles.heading_text, bellefair.className].join(" ")}>
             <HeadingLine width={50} />
-            Upcoming Events
+            <p>Upcoming Events</p>
             <HeadingLine width={150} />
           </div>
           <HeadingButton link={"/"} />

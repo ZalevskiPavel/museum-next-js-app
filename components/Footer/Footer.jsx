@@ -1,19 +1,8 @@
 import styles from "./footer-styles.module.css"
-import { Facebook, Instagram, Twitter, Youtube, Tiktok, Vk, HappyBeaming, Envelope, Clock, Copyright } from "@boxicons/react";
-import FooterData from "../../utils/footer-data.json"
+import { Envelope, Clock, Copyright, HappyBeaming } from "@boxicons/react";
+import FooterData from "../../utils/footer-data.js"
 
 export default function Footer() {
-    function getIcon(name) {
-        switch (name) {
-            case "facebook": return <Facebook className={styles.icons} />;
-            case "instagram": return <Instagram className={styles.icons} />;
-            case "twitter": return <Twitter className={styles.icons} />;
-            case "youtube": return <Youtube className={styles.icons} />;
-            case "tiktok": return <Tiktok className={styles.icons} />;
-            case "vk": return <Vk className={styles.icons} />;
-        }
-    }
-
     return (
         <footer className={styles.footer}>
             <div className={styles.container}>
@@ -25,10 +14,12 @@ export default function Footer() {
                             </p>
                             <ul>
                                 {FooterData.social_media.map((element) => {
+                                    const Icon = element.icon;
+
                                     return (
                                         <li key={element.name}>
                                             <a href={element.link}>
-                                                {getIcon(element.name)}
+                                                <Icon className={styles.icons} />
                                             </a>
                                         </li>
                                     );
@@ -62,7 +53,7 @@ export default function Footer() {
                             })}
                             <p>{FooterData.contact.phone}</p>
                         </div>
-                        <img src="/footer-turtle.webp" alt="" />
+                        <img src={FooterData.image} alt="" />
                     </div>
                     <div className={styles.under_footer}>
                         <div className={styles.links}>
@@ -76,7 +67,7 @@ export default function Footer() {
                                 );
                             })}
                         </div>
-                        <p><Copyright className={styles.under_icons} />2024 The Trustees of Museum</p>
+                        <p><Copyright className={styles.under_icons} />{FooterData.copyright}</p>
                     </div>
                 </div>
             </div>

@@ -1,4 +1,6 @@
-import SliderSection from "./slider/SliderSection"
+//import SliderSection from "./slider/SliderSection"
+import SliderSection from "./slider/SliderServerComponent"
+
 import styles from "./index-styles.module.css"
 import { Bellefair } from "next/font/google";
 import AboutSection from "./about/AboutSection"

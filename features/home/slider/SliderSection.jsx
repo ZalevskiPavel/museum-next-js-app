@@ -3,18 +3,21 @@ import { useState } from "react";
 import { Bellefair } from "next/font/google";
 import HeadingLine from "../../../components/HeadingLine/HeadingLine";
 import HeadingButton from "../../../components/HeadingButton/HeadingButton";
-import SlideData from "../../../utils/slider-data.json"
-import Slide from "../slider/item/Slide"
-import styles from "./slider-section.module.css"
+//import SlideData from "../../../utils/slider-data.json";
+import Slide from "../slider/item/Slide";
+import styles from "./slider-section.module.css";
+
 
 const bellefair = Bellefair({
   subsets: ["latin"],
   weight: "400",
 });
 
-export default function MainSlider() {
+export default function MainSlider({ slides }) {
   const [currentSlide, setCurrentSlide] = useState(0);
-  const totalSlides = SlideData.slides.length;
+  const totalSlides = slides.length;
+
+  console.log( slides.id);
 
   const nextSlide = () => {
     setCurrentSlide((prev) => (prev + 1) % totalSlides);
@@ -41,14 +44,15 @@ export default function MainSlider() {
               transform: `translateX(-${currentSlide * 100}%)`,
             }}>
             {
-              SlideData.slides.map((slide) => {
+              
+              slides.map((slide) => {
                 return (<Slide key={slide.id}
                   number={slide.number}
                   title={slide.title}
                   date={slide.date}
                   description={slide.description}
-                  image={slide.image}
-                  links={slide.links}
+                  image={"http://localhost:1337" + slide.image[0].formats?.large?.url}
+                  links={slide.links[0]}
                 />);
               })
             }

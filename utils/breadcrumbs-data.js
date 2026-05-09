@@ -1,7 +1,7 @@
 import { Facebook, Instagram, Twitter, Vk } from "@boxicons/react";
 
 const breadcrumbsData = {
-    social_media: [
+  social_media: [
     {
       name: "facebook",
       link: "#",

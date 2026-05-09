@@ -17,7 +17,7 @@ export default function MainSlider({ slides }) {
   const [currentSlide, setCurrentSlide] = useState(0);
   const totalSlides = slides.length;
 
-  console.log( slides.id);
+  console.log( slides);
 
   const nextSlide = () => {
     setCurrentSlide((prev) => (prev + 1) % totalSlides);

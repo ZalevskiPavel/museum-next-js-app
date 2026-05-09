@@ -1,0 +1,123 @@
+#mail_form{
+    background-color: #000000;
+}
+
+.mail_container{
+    display: flex;
+    align-items: center;
+    background-color: #000000;
+    flex-direction: column;
+}
+
+#form_container{
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    background-color: #24232377;
+    padding: 50px;
+    gap: 20px;
+    margin-top: 50px;
+}
+
+#form_container div{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+
+#form_container label{
+    color: white;
+    font-size: 20px;
+}
+
+#form_container select{
+    font-family: Poppins;
+}
+
+#form_container textarea{
+    resize: vertical;
+    min-height: 90px;
+}
+
+#form_container input, 
+#form_container select, 
+#form_container textarea{
+    background: none;
+    border: 1px solid white;
+    color:#bab5b5;
+    padding: 0 20px;
+    height: 40px;
+    font-size: 16px;
+    font-family: Poppins;
+}
+
+#form_container input:focus, 
+#form_container select:focus, 
+#form_container textarea:focus{
+    background-color: #ffffff;
+    color: #000000;
+    transition: 0.5s;
+}
+
+
+#form_container input::placeholder, 
+#form_container textarea::placeholder{
+    font-family: Poppins;
+    color:#bab5b5;
+}
+
+#message{
+    height: 180px;
+    text-align: start;
+}
+
+#form_container button{
+    width: 120px;
+    height: 40px;
+    align-self: flex-end;
+    font-family: Poppins;
+    border: 1px solid white;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    transition: 0.5s;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+#form_container button p{
+    width: 20px;
+    height: 20px;
+    background-color: #000000;
+    color: #FFFFFF;
+    border-radius: 50%;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.5s;
+}
+
+#form_container button:hover{
+    background-color: #000000;
+    color:#FFFFFF;
+    p{
+        background-color: #ffffff;
+        color: #000000;
+    }
+}
+
+.error{
+    color: red;
+    
+    font-size: 16px;
+}
+
+.container {
+    width: 1400px;
+    height: 100%;
+    margin: 0 auto;
+
+}

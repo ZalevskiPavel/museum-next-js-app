@@ -1,4 +1,3 @@
-//import SliderSection from "./slider/SliderSection"
 import SliderSection from "./slider/SliderServerComponent"
 
 import styles from "./index-styles.module.css"

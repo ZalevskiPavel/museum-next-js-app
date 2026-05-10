@@ -104,3 +104,183 @@ li::before {
     width: 6em;
     color:white;
 }
+
+
+/*Adaptation*/
+@media only screen and (max-width: 539px){
+    /*Events*/
+    
+    .slide{
+        height: 200px;
+        align-items: center;
+    }
+
+    .slide_container{
+        padding: 1em;
+        display: flex;
+        flex-direction: column;
+        gap:5px;
+    }
+
+    .info_container p{
+        font-size: 30px;
+    }
+    
+    .date{
+        font-size: 8px;
+    }
+
+    .inscription ul li{
+        font-size: 20px;
+    }
+    
+    .description{
+        font-size: 8px;
+    }
+
+    .click_container{
+        font-size: 10px;
+    }
+
+    .beautiful_button{
+        width: 30px;
+        height: 30px;
+    }
+
+    .beautiful_button span{
+        top:0.9em;    
+        width: 5.8em;
+    }
+
+}
+
+@media only screen and (min-width: 540px){
+    /*Events*/
+    
+    .slide{
+        height: 300px;
+    }
+
+    .info_container p{
+        font-size: 40px;
+    }
+    
+    .description{
+        font-size: 10px;
+    }
+
+    .click_container{
+        font-size: 14px;
+    }
+
+    .beautiful_button span{
+        top: 1.4em;    
+        width: 5.8em;
+    }
+}
+
+@media only screen and (min-width: 768px){
+    
+    /*Events*/
+    .slide{
+        height: 300px;
+    }
+
+    .info_container p{
+        font-size: 50px;
+    }
+    
+    .description{
+        font-size: 12px;
+    }
+
+    .click_container{
+        font-size: 16px;
+    }
+
+    .beautiful_button span{
+        top: 1.1em;    
+        width: 5.8em;
+    }
+}
+
+@media only screen and (min-width: 992px){
+    /*Events*/
+    
+    .slide{
+        height: 480px;
+    }
+
+    .info_container p{
+        font-size: 67px;
+    }
+    
+    .description{
+        font-size: 15px;
+    }
+
+    .click_container{
+        font-size: 20px;
+    }
+
+    .beautiful_button span{
+        top: 0.7em;    
+        width: 6em;
+    }
+
+}
+
+@media only screen and (min-width: 1200px){
+    /*Events*/
+    .slide{
+        height: 640px;
+    }
+
+    .heading_text{
+        font-size: 72px;
+    }
+
+    .info_container p{
+        font-size: 67px;
+    }
+    
+    .description{
+        font-size: 15px;
+    }
+
+    .click_container{
+        font-size: 20px;
+    }
+
+    .beautiful_button span{
+        top: 0.7em;    
+        width: 6em;
+    }
+
+}
+
+@media only screen and (min-width: 1400px){
+    /*Events*/
+
+    .slide{
+        height: 640px;
+    }
+
+    .info_container p{
+        font-size: 67px;
+    }
+    
+    .description{
+        font-size: 15px;
+    }
+
+    .click_container{
+        font-size: 20px;
+    }
+
+    .beautiful_button span{
+        top: 0.7em;    
+        width: 6em;
+    }
+    
+}

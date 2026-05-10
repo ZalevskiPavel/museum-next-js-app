@@ -150,3 +150,69 @@
     transform: translate(-50%, -50%) scale(1) !important; 
     opacity: 1 !important; 
 }
+
+/*Adaptation*/
+@media only screen and (max-width: 539px){
+    .container{
+        width: 344px;
+    }
+
+    /*Mail_form*/
+    #form_container{
+        padding: 20px;
+    }
+
+    #form_container input, 
+    #form_container select, 
+    #form_container textarea{
+
+        font-size: 12px;
+        padding: 0 10px;
+    }
+
+    #form_container button{
+        width: 100%;
+        justify-content: space-between;
+        padding: 0 20px;
+    }
+
+}
+
+@media only screen and (min-width: 540px){
+    .container{
+        width: 540px;
+    }
+  
+}
+
+@media only screen and (min-width: 768px){
+    /*Global*/
+    .container{
+        width: 768px;
+    }
+
+}
+
+@media only screen and (min-width: 992px){
+    /*Global*/
+    .container{
+        width: 992px;
+    }
+
+}
+
+@media only screen and (min-width: 1200px){
+    /*Global*/
+    .container{
+        width: 1200px;
+    }
+
+}
+
+@media only screen and (min-width: 1400px){
+    /*Global*/
+    .container{
+        width: 1400px;
+    }
+
+}

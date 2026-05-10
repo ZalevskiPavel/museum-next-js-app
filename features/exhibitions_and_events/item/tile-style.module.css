@@ -47,3 +47,62 @@
     font-size: 22px;
     text-align: center;
 }
+
+/*Adaptation*/
+@media only screen and (max-width: 539px){
+    /*tiles*/
+
+    .tile_description{
+        opacity: 1;
+    }
+    .tile{
+        width: 320px;
+    }
+
+}
+
+@media only screen and (min-width: 540px){
+    /*tiles*/
+
+    .tile_description{
+        opacity: 1;
+    }
+
+}
+
+@media only screen and (min-width: 768px){
+     /*Tiles*/
+    
+    .tile{
+        width: 360px;
+    }
+    
+}
+
+@media only screen and (min-width: 992px){
+    /*tiles*/
+
+    .tile{
+        width: 400px;
+    }
+
+}
+
+@media only screen and (min-width: 1200px){
+    /*Tiles*/
+    .tile{
+        width: 370px;
+    }
+
+    .tile_description{
+        opacity: 0;
+    }
+}
+
+@media only screen and (min-width: 1400px){
+    /*tiles*/
+
+    .tile{
+        width: 400px;
+    }
+}

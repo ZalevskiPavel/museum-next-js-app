@@ -128,3 +128,154 @@
     border-bottom: 1px solid #6d6c6c;
     font-size: 20px;
 }
+
+
+/*Adaptation*/
+@media only screen and (max-width: 539px){
+    .container{
+        width: 344px;
+    }
+
+    /*header*/
+    .header_name{
+        font-size: 22px;
+    }
+    .intro{
+        font-size: 28px;
+    }
+    .event_base_info{
+        width: 100%;
+        margin-bottom: 0px;
+        max-width: 100%;
+    }
+
+    /*Info part*/
+    .about_info{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    
+    .info_about_sliced{
+        width: 100%;
+    }
+
+    /*Pop out*/
+    .pop_up{
+        width: 100%;
+    }
+}
+
+@media only screen and (min-width: 540px){
+    .container{
+        width: 540px;
+    }
+
+    /*header*/
+    .header_name{
+        font-size: 30px;
+    }
+
+    .event_base_info{
+        width: 100%;
+        margin-bottom: 0px;
+        max-width: 100%;
+    }
+
+    /*Info part*/
+    .about_info{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    
+    .info_about_sliced{
+        width: 100%;
+    }
+
+    /*Pop out*/
+    .pop_up{
+        width: 100%;
+    }
+}
+
+@media only screen and (min-width: 768px){
+    /*Global*/
+    .container{
+        width: 768px;
+    }
+
+    /*header*/
+    .header_name{
+        font-size: 30px;
+    }
+
+    .event_base_info{
+        max-width: 40%;
+        margin-bottom: 20px;
+        align-self: end;
+    }
+
+    /*Info part*/
+    .about_info{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    
+    .info_about_sliced{
+        width: 100%;
+    }
+
+    
+    /*Pop out*/
+
+    .pop_up{
+        width: 600px;
+    }
+
+}
+
+@media only screen and (min-width: 992px){
+    /*Global*/
+    .container{
+        width: 992px;
+    }
+
+    /*header*/
+    .header_name{
+        font-size: 50px;
+    }
+    
+    /*Info part*/
+    .about_info{
+        display: grid;
+    }
+
+    .info_about_sliced{
+        width: 60%;
+    }
+
+}
+
+@media only screen and (min-width: 1200px){
+    /*Global*/
+    .container{
+        width: 1200px;
+    }
+    
+    /*header*/
+    .header_name{
+        font-size: 60px;
+    }
+
+}
+
+@media only screen and (min-width: 1400px){
+    /*Global*/
+    .container{
+        width: 1400px;
+    }
+
+    /*header*/
+    .header_name{
+        font-size: 70px;
+    }
+}

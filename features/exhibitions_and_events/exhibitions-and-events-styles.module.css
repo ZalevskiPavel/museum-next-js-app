@@ -15,7 +15,7 @@
     flex-direction: column;
     padding: 50px 20px;
     gap:20px; 
-margin-top: 30px;
+    margin-top: 30px;
     border-bottom: 1px solid #6d6c6c;
 }
 
@@ -204,4 +204,138 @@ margin-top: 30px;
     width: 1400px;
     height: 100%;
     margin: 0 auto;
+}
+
+
+/*Adaptation*/
+@media only screen and (max-width: 539px){
+    .container{
+        width: 344px;
+    }
+
+    /*filters*/
+    .filter_heading{
+        font-size: 40px;
+    }
+
+    .filters {
+        flex-direction: column;
+        gap:20px
+    }
+    .list_header{
+        width: 100%
+    }
+    .list_content{
+        width: 100%;
+    }
+
+    #filter_bar{
+        font-size: 14px;
+        flex-direction: column;
+    }
+
+}
+
+@media only screen and (min-width: 540px){
+    .container{
+        width: 540px;
+    }
+    /*filters*/
+    .filter_heading{
+        font-size: 60px;
+    }
+
+    .filters {
+        flex-direction: column;
+        gap:20px
+    }
+    .list_header{
+        width: 100%
+    }
+    .list_content{
+        width: 100%;
+    }
+
+    #filter_bar{
+        font-size: 14px;
+    }
+}
+
+@media only screen and (min-width: 768px){
+    /*Global*/
+    .container{
+        width: 768px;
+    }
+
+    /*filters*/
+    
+    .filter_heading{
+        font-size: 80px;
+    }
+}
+
+@media only screen and (min-width: 992px){
+    /*Global*/
+    .container{
+        width: 992px;
+    }
+
+    /*filters*/
+
+    .filters {
+        flex-direction: row;
+    }
+    .list_header{
+        width: 290px;
+    }
+    .list_content{
+        width: 290px;
+    }
+    
+    #filter_bar{
+        font-size: 16px;
+    }
+
+    #space{
+        width: 1230px;
+    }
+}
+
+@media only screen and (min-width: 1200px){
+    /*Global*/
+    .container{
+        width: 1200px;
+    }
+
+    /*filters*/
+    .list_header{
+        width: 360px;
+    }
+    .list_content{
+        width: 360px;
+    }
+    
+    #space{
+        width: 1170px;
+    }
+}
+
+@media only screen and (min-width: 1400px){
+    /*Global*/
+    .container{
+        width: 1400px;
+    }
+
+    /*filters*/
+    .list_header{
+        width: 420px;
+    }
+    .list_content{
+        width: 420px;
+    }
+
+    #space{
+        width: 1230px;
+    }
+    
 }

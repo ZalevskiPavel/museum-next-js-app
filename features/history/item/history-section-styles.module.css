@@ -71,3 +71,107 @@
     margin: 0 auto;
 
 }
+
+/*Adaptation*/
+@media only screen and (max-width: 539px){
+    .container{
+        width: 344px;
+    }
+    /*header*/
+    .header_container p{
+        font-size: 40px;
+    }
+    
+    /*section history*/
+    
+    .subsection{
+        grid-template-columns: 1fr;
+    }
+
+    .left_part, .right_part{
+        padding: 20px 20px;
+    }
+
+    .subsection_heading{
+        font-size: 25px;
+    }
+    .subsection_paragraf{
+        font-size: 12px;
+    }
+
+    .img_description{
+        font-size: 10px;
+    }
+}
+
+@media only screen and (min-width: 540px){
+    .container{
+        width: 540px;
+    }
+
+    /*section history*/
+    
+    .subsection{
+        grid-template-columns: 1fr;
+    }
+
+}
+
+@media only screen and (min-width: 768px){
+    /*Global*/
+    .container{
+        width: 768px;
+    }
+
+}
+
+@media only screen and (min-width: 992px){
+    /*Global*/
+    .container{
+        width: 992px;
+    }
+    
+}
+
+@media only screen and (min-width: 1200px){
+    /*Global*/
+    .container{
+        width: 1200px;
+    }
+
+    /*section history*/
+    
+    .subsection{
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .limiter{
+        max-height: 400px;
+    }
+
+    .subsection_paragraf{
+        font-size: 14px;
+    }
+    .subsection_heading{
+        font-size: 45px;
+    }
+}
+
+@media only screen and (min-width: 1400px){
+    /*Global*/
+    .container{
+        width: 1400px;
+    }
+    /*section history*/
+    
+    .limiter{
+        max-height: 600px;
+    }
+    .subsection_heading{
+        font-size: 55px;
+    }
+
+    .subsection_paragraf{
+        font-size: 16px;
+    }
+}

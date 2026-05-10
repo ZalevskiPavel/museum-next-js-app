@@ -50,3 +50,120 @@ button:hover {
     transition: 0.5s;
     cursor: pointer;
 }
+
+
+/*Adaptation*/
+@media only screen and (max-width: 539px){
+    .container{
+        width: 344px;
+    }
+
+    /*Header*/
+    .header__circle{
+        width: 300px;
+        height: 300px;
+    }
+
+    .header__statue{
+        width: 80%;
+        height: 80%;
+        float: right;
+        /**/margin-top: 50px;
+    }
+
+}
+
+@media only screen and (min-width: 540px){
+    .container{
+        width: 540px;
+    }
+
+    /*Header*/
+    .header__circle{
+        width: 500px;
+        height: 500px;
+    }
+
+    .header__statue{
+        width: 80%;
+        height: 80%;
+        float: right;
+    }
+
+}
+
+@media only screen and (min-width: 768px){
+    /*Global*/
+    .container{
+        width: 768px;
+    }
+
+    /*Header*/
+    .header__circle{
+        width: 600px;
+        height: 600px;
+    }
+
+    .header__statue{
+        width: 80%;
+        height: 80%;
+        float: right;
+    }
+
+}
+
+@media only screen and (min-width: 992px){
+    /*Global*/
+    .container{
+        width: 992px;
+    }
+
+    /*Header*/
+    .header__circle{
+        width: 800px;
+        height: 800px;
+    }
+
+    .header__statue{
+        width: 80%;
+        height: 80%;
+        float: right;
+    }
+}
+
+@media only screen and (min-width: 1200px){
+    /*Global*/
+    .container{
+        width: 1200px;
+    }
+
+    /*Header*/
+    .header__circle{
+        width: 1100px;
+        height: 1100px;
+    }
+
+    .header__statue{
+        width: 100%;
+        height: 100%;
+    }
+}
+
+@media only screen and (min-width: 1400px){
+    /*Global*/
+    .container{
+        width: 1400px;
+    }
+
+    /*Header*/
+    .header__circle{
+        width: 1340px;
+        height: 1340px;
+    }
+    
+    .header__statue{
+       width: 100%;
+       height: 100%;
+    }
+  
+}

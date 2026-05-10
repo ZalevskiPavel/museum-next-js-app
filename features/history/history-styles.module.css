@@ -75,3 +75,90 @@
 .spacer{
     height: 20vw;
 }
+
+
+/*Adaptation*/
+@media only screen and (max-width: 539px){
+    .container{
+        width: 344px;
+    }
+    /*header*/
+    .header_container p{
+        font-size: 40px;
+    }
+
+    /*Introduction*/
+    .introduction_container{
+        grid-template-columns: 1fr;
+        padding: 20px 20px;
+    }
+    .introduction_heading{
+        font-size: 20px;
+    }
+
+}
+
+@media only screen and (min-width: 540px){
+    .container{
+        width: 540px;
+    }
+
+
+    /*Introduction*/
+    .introduction_container{
+        grid-template-columns: 1fr ;
+    }
+}
+
+@media only screen and (min-width: 768px){
+    /*Global*/
+    .container{
+        width: 768px;
+    }
+
+}
+
+@media only screen and (min-width: 992px){
+    /*Global*/
+    .container{
+        width: 992px;
+    }
+
+    /*introduction*/
+
+    .introduction_container{
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .introduction_heading{
+        font-size: 30px;
+    }
+    
+}
+
+@media only screen and (min-width: 1200px){
+    /*Global*/
+    .container{
+        width: 1200px;
+    }
+
+    
+    /*introduction*/
+
+    .introduction_heading{
+        font-size: 30px;
+    }
+}
+
+@media only screen and (min-width: 1400px){
+    /*Global*/
+    .container{
+        width: 1400px;
+    }
+
+    /*introduction*/
+
+    .introduction_heading{
+        font-size: 40px;
+    }
+}

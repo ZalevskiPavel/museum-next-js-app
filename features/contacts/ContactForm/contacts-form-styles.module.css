@@ -121,3 +121,32 @@
     margin: 0 auto;
 
 }
+
+.toast {
+    position: fixed;
+    left:50%;
+    top:50%;
+    
+    padding: 15px 25px;
+    background-color: #1a1a1a; 
+    color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+    z-index: 2000;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    border: 1px solid #333;
+
+
+    transform: translate(-50%, -250%) scale(0.7);
+    opacity: 0;
+    transition: transform 0.5s;
+}
+
+.toast_visible {
+    transform: translate(-50%, -50%) scale(1) !important; 
+    opacity: 1 !important; 
+}

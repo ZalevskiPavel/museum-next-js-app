@@ -1,0 +1,130 @@
+.wrapper {
+    width: 100%;
+    min-height: 100vh;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    font-family: Poppins;
+    position: relative;
+    overflow: hidden;
+    color: #ffffff;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+.header {
+    width: 100%;
+    min-height: 50px;
+    display: flex;
+    align-items: center;
+    font-family: bellefair;
+}
+
+.header_container {
+    width: 100%;
+    height: 50vw;
+    display: flex;
+    align-items: end;
+    justify-content: end;
+    position: relative;
+}
+
+.event_base_info {
+    max-width: 40%;
+    background-color: #000000;
+    font-family: Bellefair;
+    padding: 40px 30px;
+    position: absolute;
+    margin-bottom: 20px;
+    align-self: end;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #6d6c6c;
+}
+
+.event_dates {
+    display: flex;
+    gap: 5px;
+}
+
+.main {
+    width: 100%;
+    color: #ffffff;
+}
+
+.event_info {
+    background-color: #000000;
+}
+
+.container {
+    width: 1400px;
+    height: 100%;
+    margin: 0 auto;
+}
+
+.about_info {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 50px 20px;
+}
+
+.intro {
+    font-size: 50px;
+    line-height: 1;
+    font-family: bellefair;
+    padding-bottom: 15px;
+}
+
+.description {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.info_about_event_part {
+    display: flex;
+    justify-content: end;
+}
+
+.info_about_sliced {
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+
+}
+
+.date_and_time {
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+    border-bottom: 1px solid #6d6c6c;
+    padding-bottom: 15px;
+}
+
+.date{
+    display: flex;
+    gap:10px;
+    font-size: 20px;
+    align-items: center;
+    font-weight: 500;
+}
+
+.time{
+    display: flex;
+    gap:10px;
+    font-size: 13px;
+    align-items: center;
+    font-weight: 500;
+}
+
+.e_price{
+    display: flex;
+    gap:10px;
+    align-items: center;
+    padding: 15px 0;
+    border-bottom: 1px solid #6d6c6c;
+    font-size: 20px;
+}
